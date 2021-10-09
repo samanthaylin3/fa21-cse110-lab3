@@ -3,6 +3,7 @@
     color: black;
     background-color: #FFF;
     margin: auto;
+    font-family: 'Scheherazade New', serif;
 }
 
 nav ul {
@@ -39,6 +40,7 @@ h2 {
 /* id selector */
 #date {
     position: relative;
+    font-family: 'Andada Pro', serif;
 }
 
 body {
