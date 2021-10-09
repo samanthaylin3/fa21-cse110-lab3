@@ -1,0 +1,136 @@
+/* universal selector */
+* {
+    color: black;
+    background-color: #FFF;
+    margins: auto;
+}
+
+/* element selector */
+h1 {
+    color: #CCCFFF
+}
+
+h2 {
+    position: sticky;
+}
+
+/* id selector */
+#date {
+    position: relative;
+}
+
+/* set background color for the headings h3 */
+h3 {
+    background-color:rgb(230,230,250);
+}
+
+body {
+    margin: 5px 10px 5px 10px
+}
+/* Attribute selector */
+a[title] {
+    color:lightsalmon;
+}
+
+/* attendance has grid layout */
+#attendance {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap:15px;
+    row-gap: 20px;
+    justify-items: left;
+    align-items: center;
+}
+
+/* Adjacent sibiling combinator */
+summary + p {
+    background-color:aliceblue;
+}
+
+/* gallery has flex layout */
+#gallery-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    align-items: left;
+    gap: 20px;
+}
+
+/* selector list */
+img, video {
+    height: 10cm;
+    width: 13cm;
+    max-width: 15cm;
+    min-width:  8cm; 
+}
+
+/* child combinator */
+div > audio {
+    width: 13cm;
+    padding: 10px 20px 10px 20px;
+}
+
+ul.my-things li {
+    margin: 2em;
+}
+
+li {
+    list-style-type: disc;
+}
+
+/* descendant combinator */
+li li {
+    list-style-type: circle;
+}
+
+
+/* setting the box model for class="boxToDo" */
+.boxToDo {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: solid;
+    border-color:lightgoldenrodyellow;
+    border-width: 0.3cm;
+    border-radius: 0.5cm;
+    font-size: 3ex;
+}
+
+/* combining two selectors */
+p.lastmeeting {
+    color: darkgray;
+}
+
+/* General sibiling combinator */
+div ~ p {
+    color: red;
+}
+
+/* setting the box model for class="box-finished-tasks" */
+.box-finished-tasks {
+    display: inline-block;
+    margin: 1pt 1pt 1pt 1pt;
+    padding: 1px 3px 1px 3px;
+    border-style:hidden;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* class selector */
+.finished-tasks {
+    text-decoration:underline;
+    color:hsl(0,40%,60%);
+}
+
+#beg_form, form {
+    display: none;
+}

@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CSE 110 Meeting Minutes</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/x-icon" href="gallery/favicon.ico">
     </head>
     <body>
@@ -18,16 +19,19 @@
             </nav>
         </header>
         <main>
-            <h1>CSE 110 Meeting Minutes</h1>
+            <h1 title="CSE 110 Meeting Minutes">CSE 110 Meeting Minutes</h1>
             <h2>First meeting to brainstrom and get to know the team</h2>
-            <h3>October 1, 2021</h3>
+            <h3 id="date">October 1, 2021</h3>
             <br>
             <section >
                 <h3 id="attendancelist">Attendance List</h3>
-                <ul>
+                <ul id="attendance">
                     <li>Alice</li>
                     <li>Bob</li>
                     <li>Samantha</li>
+                    <li>Sam</li>
+                    <li>Sammy</li>
+                    <li>Sammie</li>
                 </ul>
             </section>
             <section>
@@ -42,7 +46,7 @@
             </section>
             <section>
                 <h3>Unfinished Agenda from last meeting</h3>
-                <p>None since this is first meeting.</p>
+                <p class="lastmeeting">None since this is first meeting.</p>
             </section>
             <section>
                 <h3>New business</h3>
@@ -55,29 +59,45 @@
             <section>
                 <h3 id="miscellaneous">Questions/Comments/Concerns</h3>
                 <ul>
-                    <li>What is the project going to be about?</li>
-                    <li>What times do we meet?</li>
-                    <li>How often do we need to meet each week?</li>
+                    <li>
+                      <div>Question 1</div>
+                      <ul>
+                        <li>What is the project going to be about?</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div>Question 2</div>
+                      <ul>
+                        <li>What times do we meet?</li>
+                      </ul>
+                    </li>
+                    <li>
+                        <div>Question 3</div>
+                        <ul>
+                          <li>How often do we need to meet each week?</li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
             <br>
             <h3 id="gallery">Gallery</h3>
-            <div>
+            <div id="gallery-flex">
                 <img src="gallery/diagram.jpg" alt="List of pro and con" width="500">
                 <video controls width="500"><source src="gallery/recording.mp4" type="video/mp4"></video>
                 <audio controls src="gallery/audio.mp3"></audio>
             </div>
+            <p>Above is a recording of the meeting.</p>
             <br>
             <br>
             <details>
-                <summary><h4>Summary</h4></summary>
-                <p>In the first meeting on October 1, 2021, we got to <span class="finished-tasks">know</span> each member,
+                <summary style="margin:auto"><h4 style="color:palevioletred; font-size:2em">Summary</h4></summary>
+                <p class="box-finished-tasks">In the first meeting on October 1, 2021, we got to <span class="finished-tasks">know</span> each member,
                     <span class="finished-tasks">discussed</span> what the next few weeks will be like,
                     <span class="finished-tasks">brainstormed</span> project ideas, and 
                     <span class="finished-tasks">answered</span> member's concerns/questions.</p>
 
             </details>
-            <div>
+            <div class="boxToDo">
                 <h4>To do: </h4>
                 <ul>
                     <li>Finalize idea for project</li>
@@ -87,7 +107,7 @@
 
             <hr>
             <br>
-            <h2>Quick get to know you</h2>
+            <h2 id="beg_form">Quick get to know you</h2>
             <form method="get" class="form-example">
                 <div class="form-example">
                     <label for="date">Enter today's date:</label>
