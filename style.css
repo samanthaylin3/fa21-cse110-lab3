@@ -5,6 +5,16 @@
     margins: auto;
 }
 
+a:link  {
+    color: #4c405e;
+}
+a:hover {
+    color: #ffafc1;
+}
+a:visited {
+    color: #a1b5d0;
+}
+
 /* element selector */
 h1 {
     color: #CCCFFF
